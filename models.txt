@@ -1,0 +1,3 @@
+llama3.2:3b-instruct-q4_1
+mistral
+llama3.2
