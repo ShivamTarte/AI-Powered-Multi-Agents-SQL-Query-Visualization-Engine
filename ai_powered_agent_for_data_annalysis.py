@@ -1,4 +1,5 @@
 from textwrap import dedent
+import gradio as gr
 from crewai import Agent, Task, Crew, LLM
 from sqlalchemy import create_engine
 from crewai.tools import tool
@@ -149,24 +150,15 @@ class SQLAgent:
         except Exception as e:
             return f"An error occurred: {e}"
 
+sql_agent_instance = SQLAgent(DB_USER, DB_PASSWORD, DB_HOST, DB_NAME)
+
+iface = gr.Interface(
+    fn=sql_agent_instance.run_query,
+    inputs=gr.Textbox(label="Enter your SQL Query in Natural Language"),
+    outputs=gr.Textbox(label="Query Result"),
+    title="SQL Query Generator",
+    description="Enter a query in natural language, and the AI will generate and execute the corresponding SQL query ang give your results."
+)
+
 if __name__ == "__main__":
-    sql_agent_instance = SQLAgent(DB_USER, DB_PASSWORD, DB_HOST, DB_NAME)
-
-    print("\nSQL Query & Visualization Generator (CLI Version)")
-    print("Type 'exit' to quit.\n")
-
-    while True:
-        user_query = input("Enter your SQL Query in Natural Language: ").strip()
-        
-        if user_query.lower() == "exit":
-            print("Goodbye!")
-            break
-
-        result = sql_agent_instance.run_query(user_query)
-        print("\nQuery Result:\n", result)
-
-# calculate and categorize surface area as per continents
-# show me in tabular format population of each city in aghanistan
-# show me countries according to continent in tabular format
-# categorize top 3 continents with highest population
-# show me in tabular format top 3 rows of country table
+    iface.launch()
