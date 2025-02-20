@@ -3,21 +3,23 @@
 ![Multi-Agent AI](https://img.shields.io/badge/Multi--Agent-AI-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8+-yellow.svg) ![SQL](https://img.shields.io/badge/SQL-MySQL-red.svg) ![Visualization](https://img.shields.io/badge/Visualization-Plotly%2FMatplotlib-green.svg)
 
 ## 🎯 Overview
-**Multi-Agent SQL Query & Visualization Engine** is an AI-powered system that generates, executes, and visualizes SQL queries seamlessly. Using **CrewAI**, **LangChain**, and **Python REPL**, this system turns natural language queries into SQL results and dynamic charts—automatically! 🤖📊
+**Multi-Agent SQL Query & Visualization Engine** is an AI-powered chatbot system that seamlessly generates, executes, and visualizes SQL queries. It enables users to interact with databases using natural language, returning structured responses along with dynamic visualizations. This system is built using **Gradio, CrewAI, LangChain, and Python REPL**, making data analysis more accessible and intuitive.
 
 ## ✨ Features
-✅ **AI-Powered SQL Generation** – No SQL expertise required! 🤯  
-✅ **Real-Time Query Validation** – Prevents SQL injection & errors 🛡️  
-✅ **Automated Data Visualization** – Converts raw data into insights 📈  
-✅ **Python REPL Execution** – Dynamically runs visualization scripts 🚀  
-✅ **Interactive CLI Interface** – Simple, efficient, and user-friendly 💡  
+- **AI-Powered SQL Generation** – No SQL expertise required
+- **Real-Time Query Validation** – Prevents SQL injection & errors
+- **Automated Data Visualization** – Converts raw data into insights
+- **Python REPL Execution** – Dynamically runs visualization scripts
+- **Interactive Gradio Chatbot Interface** – User-friendly & intuitive
+- **Supports Bar Graphs, Scatter Plots, Tables, and More**
 
 ## 🏗 Tech Stack & Frameworks Used
-🔹 **CrewAI** – Multi-agent orchestration 🔄  
-🔹 **LangChain** – AI-powered query generation 🤖  
-🔹 **MySQL + SQLAlchemy** – Database interaction 🗄️  
-🔹 **Matplotlib, Plotly, Seaborn** – Stunning visualizations 🎨  
-🔹 **Python REPL Tool** – Secure script execution 🖥️  
+- **Gradio** – AI-powered chatbot interface
+- **CrewAI** – Multi-agent orchestration
+- **LangChain** – Natural language to SQL conversion
+- **MySQL + SQLAlchemy** – Database interaction
+- **Matplotlib, Plotly, Seaborn** – Stunning visualizations
+- **Python REPL Tool** – Secure script execution
 
 ## 🔧 Installation & Setup
 Clone the repository and install dependencies:
@@ -28,16 +30,19 @@ pip install -r requirements.txt
 ```
 
 ## 🚀 Usage
-Run the system via CLI:
+Run the AI-powered chatbot via Gradio:
 ```bash
-python src/ai_powered_agent_for_data_annalysis.py
+python src/chatbot_interface.py
 ```
-**Example:**
+
+**Example Interaction:**
 ```bash
-Enter your SQL Query in Natural Language: Show me the top 10 most populated countries.
+User: Show me the top 10 most populated countries.
+Chatbot: Fetching data from MySQL...
 ```
-📊 **Result:**
-A bar chart will automatically pop up displaying the top 10 most populated countries! 🎉
+
+📊 **Result:**  
+A **bar chart** displaying the top 10 most populated countries is automatically generated, alongside a table of insights.
 
 ## 🔍 Example Visualization (Python REPL Tool)
 ```python
@@ -59,6 +64,6 @@ plt.show()
 ```
 
 ## 🙌 Contributing
-Pull requests are welcome! Feel free to open an issue if you have suggestions or encounter any bugs. 🚀
+Pull requests are welcome! Feel free to open an issue if you have suggestions or encounter any bugs.
 
-🔥 **Transform SQL Queries into Insights, Effortlessly!** 🚀
+🔥 **Transform SQL Queries into Insights, Effortlessly!** 🔥
