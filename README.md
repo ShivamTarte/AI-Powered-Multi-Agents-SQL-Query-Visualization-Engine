@@ -3,7 +3,7 @@
 ![Multi-Agent AI](https://img.shields.io/badge/Multi--Agent-AI-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8+-yellow.svg) ![SQL](https://img.shields.io/badge/SQL-MySQL-red.svg) ![Visualization](https://img.shields.io/badge/Visualization-Plotly%2FMatplotlib-green.svg)
 
 ## 🎯 Overview
-**Multi-Agent SQL Query & Visualization Engine** is an AI-powered chatbot system that seamlessly generates, executes, and visualizes SQL queries. It enables users to interact with databases using natural language, returning structured responses along with dynamic visualizations. This system is built using **Gradio, CrewAI, LangChain, and Python REPL**, making data analysis more accessible and intuitive.
+**Multi-Agent SQL Query & Visualization Engine** is an **AI-powered chatbot** system that seamlessly generates, executes, and visualizes SQL queries. It enables users to interact with databases using natural language, returning structured responses along with dynamic visualizations. This system is built using **Gradio, CrewAI, LangChain, and Python REPL**, making data analysis more accessible and intuitive.
 
 ## ✨ Features
 - **AI-Powered SQL Generation** – No SQL expertise required
