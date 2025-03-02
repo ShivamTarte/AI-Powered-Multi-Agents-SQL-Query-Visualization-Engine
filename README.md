@@ -68,6 +68,8 @@ Pull requests are welcome! Feel free to open an issue if you have suggestions or
 
 🔥 **Transform SQL Queries into Insights, Effortlessly!** 🔥
 
+## ✨ Chatbot Examples
+
 ![AI Powered SQL+Visualizing Chatbot 1](https://github.com/user-attachments/assets/0912a268-dcc7-42ad-a01f-62785ffb2eb5)
 ![AI Powered SQL+Visualizing Chatbot 2](https://github.com/user-attachments/assets/5758a778-f905-41b5-a68c-5abb108b3277)
 
